@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SENAI GAMER - Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-dark bg-black-custom py-3">
+            <div class="container justify-content-between">
+                <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+                    <div class="bg-success rounded p-1"><i class="fa-solid fa-gamepad text-white"></i></div>
+                    SENAI GAMER
+                </a>
+                <a href="index.html" class="text-white text-decoration-none small"><i class="fa-solid fa-arrow-left"></i> Voltar</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="auth-main">
+        <div class="auth-container">
+            
+            <div class="text-center mb-4">
+                <i class="fa-solid fa-gamepad text-success fs-1 mb-2"></i>
+                <h5 class="fw-bold">Bem-vindo</h5>
+            </div>
+
+            <div id="login-box">
+                <form id="form-login">
+                    <div class="mb-3">
+                        <label class="form-label small fw-bold text-muted">Usuário</label>
+                        <div class="input-group">
+                            <span class="input-group-text"><i class="fa-regular fa-user"></i></span>
+                            <input type="text" class="form-control form-input" id="login-user" placeholder="Seu usuário">
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label small fw-bold text-muted">Senha</label>
+                        <div class="input-group">
+                            <span class="input-group-text"><i class="fa-solid fa-lock"></i></span>
+                            <input type="password" class="form-control form-input" id="login-pass" placeholder="Sua senha">
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-senai w-100 mt-2">Entrar</button>
+                </form>
+
+                <div class="divider"><span>ou</span></div>
+                <div class="text-center">
+                    <a href="#" id="btn-show-register" class="text-success fw-bold text-decoration-none small">Criar conta</a>
+                </div>
+            </div>
+
+            <div id="register-box" style="display: none;">
+                <form>
+                    <div class="mb-3">
+                        <label class="form-label small fw-bold text-muted">Usuário</label>
+                        <div class="input-group">
+                            <span class="input-group-text"><i class="fa-regular fa-user"></i></span>
+                            <input type="text" class="form-control form-input" placeholder="Escolha um usuário">
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label small fw-bold text-muted">E-mail</label>
+                        <div class="input-group">
+                            <span class="input-group-text"><i class="fa-regular fa-envelope"></i></span>
+                            <input type="email" class="form-control form-input" placeholder="Seu melhor e-mail">
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label small fw-bold text-muted">Senha</label>
+                        <div class="input-group">
+                            <span class="input-group-text"><i class="fa-solid fa-lock"></i></span>
+                            <input type="password" class="form-control form-input" placeholder="Crie uma senha">
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-senai w-100 mt-2">Cadastrar</button>
+                </form>
+
+                <div class="divider"><span>ou</span></div>
+                <div class="text-center">
+                    <a href="#" id="btn-show-login" class="text-success fw-bold text-decoration-none small">Já tenho login</a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="bg-black-custom text-white py-3 text-center small">
+        <p class="m-0">© 2025 SENAI Gamer. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

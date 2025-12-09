@@ -1,0 +1,213 @@
+/* style.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+:root {
+    --neon-green: #00E676;
+    --neon-green-hover: #00C853;
+    --dark-blue-bg: #1a237e;
+    --bg-black: #000000;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+a { text-decoration: none; color: inherit; transition: 0.3s; }
+ul { list-style: none; }
+button { cursor: pointer; border: none; font-family: inherit; }
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* --- Componentes Globais --- */
+.text-neon { color: #00E676; }
+.bg-black-custom { background-color: var(--bg-black) !important; }
+
+/* Botão: Sem bordas ou sombras */
+.btn-senai {
+    background-color: #00E676;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 6px;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.btn-senai:hover {
+    background-color: var(--neon-green-hover);
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* --- Header --- */
+.navbar-brand { font-weight: 700; gap: 10px; }
+.nav-actions a { color: white; margin-left: 15px; font-size: 1.2rem; transition: color 0.3s; }
+.nav-actions a:hover { color: #00E676 }
+
+/* --- Hero Section --- */
+.hero {
+    background-color: #1A237E;
+    color: white;
+    padding: 3rem 0;
+}
+.badge-hero {
+    background-color: #00E676;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+/* --- Categorias (Design Flat: Sem bordas ou sombras) --- */
+.cat-card {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #333;
+    transition: transform 0.3s;
+    height: 100%;
+}
+
+.cat-icon {
+    background-color: #00E676;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+/* --- Promoções --- */
+.section-promo { background-color: #050505; color: white; }
+.card-dark {
+    background-color: #1a1a1a;
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.card-dark img { background-color: #2a2a2a; padding: 2rem; }
+.price-box { margin: 15px 0; }
+.price-old { text-decoration: line-through; color: #777; font-size: 0.9rem; }
+.price-new { color: #00E676; font-size: 1.4rem; font-weight: bold; }
+
+/* --- Login/Cadastro --- */
+.auth-main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 1rem;
+}
+.auth-container {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.05);
+    width: 100%;
+    max-width: 420px;
+}
+.form-input {
+    background-color: #f0f2f5;
+    border: none;
+    padding: 0.8rem;
+}
+.form-input:focus {
+    background-color: #e9ecef;
+    box-shadow: none;
+    border: 1px solid #00E676;
+}
+
+/* --- NEWSLETTER / SOCIAL --- */
+.social-section {
+    background-color: var(--bg-light);
+    padding: 60px 0;
+    text-align: center;
+}
+.social-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.soc-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-size: 1.2rem;
+}
+
+/* --- FOOTER --- */
+footer {
+    background-color: #000;
+    color: #9ca3af;
+    padding: 60px 0 20px 0;
+    font-size: 0.85rem;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 2fr;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-col h4 {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
+.footer-col ul li { margin-bottom: 10px; }
+.footer-col ul li a:hover { color: white; }
+
+.footer-social-icons {
+    display: flex;
+    gap: 10px;
+}
+.footer-icon {
+    width: 32px;
+    height: 32px;
+    background-color: #1f2937;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    color: white;
+}
+
+.copyright {
+    text-align: center;
+    border-top: 1px solid #1f2937;
+    padding-top: 20px;
+}
+
+.fb { background-color: #3b82f6; }
+.ig { background-color: #db2777; }
+
+
+.input-group-text { border: none; background-color: #f0f2f5; color: #888; }
+.divider { display: flex; align-items: center; margin: 1.5rem 0; color: #ccc; }
+.divider::before, .divider::after { content: ""; flex: 1; height: 1px; background: #eee; }
+.divider span { padding: 0 10px; font-size: 0.9rem; }
